@@ -5,14 +5,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-image: url("../../../assets/images/header/nav-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
 
   color: white;
-  height: 10vh;
-  padding: 1em;
-  border-bottom: 0.5px solid rgb(36, 35, 35);
+  height: 10%;
+  padding: 0 1em;
+  border-bottom: 0.5px solid rgba(71, 71, 71, 0.603);
 }
 
 .logo {
@@ -93,7 +91,7 @@
   }
   .menu {
     position: absolute;
-    top: 10px;
+    top: 18px;
     margin-top: 50px;
     left: 0;
     flex-direction: column;
