@@ -1,16 +1,18 @@
-@import "./assets/styles/fonts";
+@import "../../../assets/styles/fonts";
 
 .header-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: black;
-  background-size: 100%;
+  background-image: url("../../../assets/images/header/nav-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   color: white;
   height: 10vh;
   padding: 1em;
-  border-bottom: 1px solid rgba(245, 237, 237, 0.58);
+  border-bottom: 0.5px solid rgb(36, 35, 35);
 }
 
 .logo {
@@ -91,13 +93,14 @@
   }
   .menu {
     position: absolute;
-    top: 5px;
+    top: 10px;
     margin-top: 50px;
     left: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 99999;
   }
   #menu-toggle ~ .menu li {
     height: 0;

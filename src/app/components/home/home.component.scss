@@ -1,0 +1,88 @@
+@import "../../../assets/styles/fonts";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: black;
+
+  &__left-section {
+    height: 50%;
+  }
+
+  &__right-section {
+    height: 50%;
+  }
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 20px;
+  color: white;
+
+  .first-content {
+    font-family: $mainTextFont, sans-serif;
+    font-size: 65px;
+  }
+
+  .second-content {
+    font-family: $mainTextFont, sans-serif;
+    font-size: 40px;
+  }
+}
+.secondary-text-content {
+  font-family: $secondaryFont, sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.primary-button {
+  margin-top: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 23px;
+  padding: 10px;
+  width: 53%;
+  background: none;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  color: white;
+  font-family: $secondaryFont, sans-serif;
+  font-size: 14px;
+}
+
+.images-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+
+  .planet-image {
+    width: 180px;
+    height: 176px;
+    position: absolute;
+  }
+
+  .astronaut-image {
+    position: relative;
+    margin: 80px 0 0 20px;
+    width: 357px;
+    height: 354px;
+  }
+
+  #mask {
+    filter: drop-shadow(0 0 2rem rgb(69, 176, 242));
+    animation: rotation 110s infinite;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
