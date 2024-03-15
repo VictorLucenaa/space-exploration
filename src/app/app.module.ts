@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeModule } from './components/home/home.module';
 import { HeaderComponent } from './components/header/header.component';
-import { HomeComponent } from './components/home/home.component';
-import { TextSectionComponent } from './components/text-section/text-section.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, TextSectionComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, HeaderComponent],
+  imports: [BrowserModule, AppRoutingModule, HomeModule],
   providers: [],
   bootstrap: [AppComponent],
 })
