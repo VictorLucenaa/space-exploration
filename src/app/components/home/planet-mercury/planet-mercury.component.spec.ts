@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextSectionComponent } from './text-section.component';
+import { PlanetMercuryComponent } from './planet-mercury.component';
 
-describe('TextSectionComponent', () => {
-  let component: TextSectionComponent;
-  let fixture: ComponentFixture<TextSectionComponent>;
+describe('PlanetMercuryComponent', () => {
+  let component: PlanetMercuryComponent;
+  let fixture: ComponentFixture<PlanetMercuryComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TextSectionComponent ]
+      declarations: [ PlanetMercuryComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TextSectionComponent);
+    fixture = TestBed.createComponent(PlanetMercuryComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
