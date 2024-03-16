@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { HomeComponent } from './home.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
-import { TextContentComponent } from './text-content/text-content.component';
 import { PlanetMercuryComponent } from './planet-mercury/planet-mercury.component';
+import { PlanetMarsComponent } from './planet-mars/planet-mars.component';
 
 @NgModule({
-  declarations: [HomeComponent, HeroSectionComponent, TextContentComponent, PlanetMercuryComponent],
+  declarations: [HomeComponent, HeroSectionComponent, PlanetMercuryComponent, PlanetMarsComponent],
   imports: [CommonModule],
-  exports: [HomeComponent, HeroSectionComponent, TextContentComponent],
+  exports: [HomeComponent, HeroSectionComponent],
 })
 export class HomeModule {}

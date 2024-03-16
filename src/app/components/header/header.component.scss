@@ -1,12 +1,16 @@
 @import "../../../assets/styles/fonts";
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 
 .header-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
-
+  background-color: rgb(15, 15, 15);
   color: white;
   height: 10%;
   padding: 0 1em;
