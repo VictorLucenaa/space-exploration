@@ -8,6 +8,7 @@ import { PlanetsModule } from './components/planets/planets.module';
 import { HeaderComponent } from './components/header/header.component';
 import { PlanetsComponent } from './components/planets/planets.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     PlanetsComponent,
     ContactComponent,
+    AboutComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HomeModule, PlanetsModule],
   providers: [],

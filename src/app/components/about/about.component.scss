@@ -1,12 +1,13 @@
-@import "../../../../assets/styles/fonts";
-@import "../../../../assets/styles/stars";
+@import "../../../assets/styles/fonts";
+@import "../../../assets/styles/stars";
 
-.section-container {
+.about {
   width: 100%;
   height: auto;
   background-color: black;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .left-container {
@@ -35,26 +36,11 @@
   align-items: flex-end;
   justify-content: center;
 
-  .planet-image {
+  .astronaut-image {
     width: 410px;
     height: 410px;
-    border-radius: 60%;
     margin-top: 10px;
     z-index: 1;
-  }
-}
-
-#mask {
-  filter: drop-shadow(0 0 2rem rgb(108, 105, 114));
-  animation: rotation 190s infinite;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(-360deg);
   }
 }
 
@@ -115,7 +101,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .section-container {
+  .about {
     flex-direction: row;
     height: auto;
     overflow: hidden;
@@ -141,10 +127,10 @@
     height: 100%;
     width: 50%;
 
-    .planet-image {
-      width: 650px;
+    .astronaut-image {
+      width: 950px;
       height: 619px;
-      margin-top: 200px;
+      margin-top: 100px;
     }
   }
   #mask {
@@ -168,7 +154,7 @@
   }
 
   .right-container {
-    .planet-image {
+    .astronaut-image {
       width: 850px;
       height: 819px;
       margin-top: 260px;

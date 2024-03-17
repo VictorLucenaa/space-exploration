@@ -1,4 +1,5 @@
 @import "../../../../assets/styles/fonts";
+@import "../../../../assets/styles/stars";
 
 .section-container {
   width: 100%;
@@ -7,6 +8,7 @@
   border-top: 1px dashed rgba(255, 255, 255, 0.363);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .left-container {
@@ -30,7 +32,7 @@
 .right-container {
   height: 50%;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
 
   .planet-image {
@@ -56,10 +58,67 @@
   }
 }
 
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $createStars;
+  animation: animStar 500s linear infinite;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: auto;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $createStars;
+  animation: animStar 300s linear infinite, twinkle 10s linear infinite;
+  border-radius: 50%;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $createStars;
+  animation: animStar 350s linear infinite, twinkle 25s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .section-container {
     flex-direction: row;
     height: auto;
+    overflow: hidden;
   }
 
   .left-container {
