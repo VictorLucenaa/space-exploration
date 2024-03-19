@@ -1,0 +1,37 @@
+<section class="picture">
+  <div id="stars"></div>
+  <div class="picture-container">
+    <h2 class="header-text">
+      Welcome to the Astronomy Picture of the Day (APOD)
+    </h2>
+    <p class="date">
+      Date:
+      <span>
+        {{ apodData.date | date : "dd/MM/yy" }}
+      </span>
+    </p>
+    <h3 class="image-title">
+      {{ apodData.title }}
+    </h3>
+    <img
+      class="image"
+      [src]="'apodData.hdurl' ? apodData.hdurl : apodData.url"
+      alt="image of the day"
+    />
+
+    <p class="copyright" *ngIf="apodData.copyright">
+      Copyright:
+      {{ apodData.copyright }}
+    </p>
+    <div class="text-explanation">
+      <h3>
+        Explanation
+        <br />
+      </h3>
+
+      <p>
+        {{ apodData.explanation }}
+      </p>
+    </div>
+  </div>
+</section>
