@@ -28,7 +28,7 @@
 
 
 <p align="center">
-    <img src="../.github/example.png" alt="Image Example" width="400px">
+    <img src="https://r2.easyimg.io/yhlkhd7xh/space-exploration.png" alt="Space Exploration Website" width="500px" height="300px">
 </p>
 
 <h2 id="about">📌 About</h2>
