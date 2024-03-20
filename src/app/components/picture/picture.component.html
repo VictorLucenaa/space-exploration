@@ -1,4 +1,16 @@
-<section class="picture">
+<!-- Placeholder Content -->
+
+<div class="placeholder-container" *ngIf="isLoading">
+  <div class="center-body">
+    <div class="loader-circle-9">
+      Loading
+      <span></span>
+    </div>
+  </div>
+</div>
+
+<!-- API content -->
+<section class="picture" *ngIf="!isLoading">
   <div id="stars"></div>
   <div class="picture-container">
     <h2 class="header-text">
