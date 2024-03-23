@@ -1,2 +1,20 @@
-<app-planet-mercury></app-planet-mercury>
-<app-planet-mars></app-planet-mars>
+<section class="section-container">
+  <div id="stars"></div>
+
+  <div class="left-container">
+    <p class="main-text">{{ name }}</p>
+    <p class="secondary-text">
+      {{ descriptionOne }}
+      <br /><br />
+      {{ descriptionTwo }}
+    </p>
+  </div>
+  <div class="right-container">
+    <img
+      src="{{ imgUrl }}"
+      alt="Planet {{ name }}"
+      class="planet-image"
+      id="mask"
+    />
+  </div>
+</section>

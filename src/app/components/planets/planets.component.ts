@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-planets',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./planets.component.scss']
 })
 export class PlanetsComponent implements OnInit {
+  @Input() name: string = '';
+  @Input() descriptionOne: string = '';
+  @Input() descriptionTwo: string = '';
+  @Input() imgUrl: string = '';
 
   constructor() { }
 

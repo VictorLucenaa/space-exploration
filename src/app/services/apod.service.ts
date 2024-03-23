@@ -3,25 +3,26 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { IApod } from '../interfaces/iapod';
 import { formatDate } from '@angular/common';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApodService {
-  api_key: string = 'pdK5KSAmlaNd0cNwQSLJVRH2xOBgvwTV1acGhDEn';
+  apiKey: string = environment.apiKey;
   apiUrl: string = 'https://api.nasa.gov/planetary/apod';
   localDate: string = '';
 
-  constructor(private http: HttpClient) {
+  constructor(private readonly http: HttpClient) {
     const locale = 'en-US';
     const currentDate = new Date();
 
-    this.localDate = formatDate(currentDate, 'yyyy-MM-dd', locale);
+    this.localDate = formatDate(currentDate, 'yyyy-MM-dd', locale); // Pode acontecer da api retornar um 404, pois a imagem do dia ainda não foi publicada. O que fazer nessa situação?
   }
 
-  getApod(): Observable<IApod> {
+  getApod$(): Observable<IApod> {
     return this.http.get<IApod>(
-      `${this.apiUrl}?api_key=${this.api_key}&date=${this.localDate}`
+      `${this.apiUrl}?api_key=${this.apiKey}&date=${this.localDate}`
     );
   }
 }

@@ -1,0 +1,9 @@
+<section class="section-container" *ngFor="let planet of this.planets">
+  <div id="stars"></div>
+  <app-planets
+    [name]="planet.name"
+    [descriptionOne]="planet.descriptionOne"
+    [descriptionTwo]="planet.descriptionTwo"
+    [imgUrl]="planet.imgUrl"
+  ></app-planets>
+</section>
