@@ -17,7 +17,7 @@ export class PictureComponent implements OnInit {
 
   ngOnInit(): void {
     this.apodService
-      .getApod()
+      .getApod$()
       .pipe(delay(2500))
       .subscribe((response) => {
         this.apodData = response;

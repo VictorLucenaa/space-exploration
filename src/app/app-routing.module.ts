@@ -6,13 +6,14 @@ import { AboutComponent } from './components/about/about.component';
 import { PlanetsComponent } from './components/planets/planets.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PictureComponent } from './components/picture/picture.component';
+import { PlanetsPageComponent } from './pages/planets-page/planets-page.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'planets', component: PlanetsComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'picture', component: PictureComponent },
+  { path: '', component: HomeComponent, title: 'SpaceExploration'},
+  { path: 'planets', component: PlanetsPageComponent, title: 'Planets'},
+  { path: 'contact', component: ContactComponent, title: 'Contact'},
+  { path: 'about', component: AboutComponent, title: 'About'},
+  { path: 'picture', component: PictureComponent, title: 'Picture'},
 ];
 
 @NgModule({
