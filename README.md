@@ -27,7 +27,7 @@
 
 
 <p align="center">
-    <img src="https://r2.easyimg.io/yhlkhd7xh/space-exploration.png" alt="Space Exploration Website" width="500px" height="300px">
+    <img src="https://imgur.com/a/p95v2fu" alt="Space Exploration Website" width="500px" height="300px">
 </p>
 
 <h2 id="about">📌 About</h2>
